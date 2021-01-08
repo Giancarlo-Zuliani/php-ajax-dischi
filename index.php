@@ -11,13 +11,8 @@
     <body>
         <div id="app">
             <div class="btn">
-                <button @click="update('Bon Jovi')">Bon Jovi</button>
-                <button @click="update('Queen')">Queen</button>
-                <button @click="update('Sting')">Sting</button>
-                <button @click="update('Steve Gadd Band')">Steve Gadd Band</button>
-                <button @click="update('Iron Maiden')">Iron Maiden</button>
-                <button @click="update('Eric Clapton')">Eric Clapton</button>
-                <button @click="update('all')">All</button>
+              <button @click="update('all')">All</button>
+              <button v-for="name in authors" @click="update(name)">{{name}}</button>
             </div>
             <div class="container">
                 <div class='box' v-for="album in albums">

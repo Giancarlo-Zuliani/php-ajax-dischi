@@ -1,7 +1,8 @@
 var APP = new Vue ({
     el: "#app",
     data : {
-        albums: []
+        albums: [],
+        authors :[]
     },
 
     methods: {
@@ -16,6 +17,12 @@ var APP = new Vue ({
     },
 
     mounted: function() {
-        axios.get('data.php?author=all').then(response => this.albums = response.data)
+        axios.get('data.php?author=all')
+        .then(response =>{
+          this.albums = response.data;
+          for(i=0;i<this.albums.length;i++){
+            this.authors.push(this.albums[i].author);
+          }
+         });
     }
 })
