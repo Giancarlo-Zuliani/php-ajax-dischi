@@ -1,4 +1,4 @@
-var app = new Vue ({
+var APP = new Vue ({
     el: "#app",
     data : {
         albums: []
