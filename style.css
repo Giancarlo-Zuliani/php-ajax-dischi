@@ -3,22 +3,22 @@
     padding: 0;
     margin: 0;
 }
+body{
+  background-color: #000;
+}
 
 .container {
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    min-height: 100vh;
-    padding: 100px
+    width:90%;
+    margin:50px auto;
 }
 
 .btn {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    padding-top: 10px;
+    width:50%;
+    margin:25px auto;
 }
 
 .btn button {
@@ -27,12 +27,13 @@
 }
 
 .box {
-    width: 300px;
-    min-height: 350px;
-    margin: 20px 100px;
+    width: 20%;
+    height: 350px;
+    margin: 20px 50px;
     border: 1px solid white;
-    padding: 30px;
-    background-color: rgb(26, 24, 24);
+    background-color:grey;
+    text-align: center;
+    padding: 15px;
 }
 
 .box {
@@ -42,7 +43,7 @@
 }
 
 .box img {
-    width: 200px;
+    width: 100%;
     margin-bottom: 25px;
 }
 
